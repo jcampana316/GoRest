@@ -379,6 +379,41 @@
 		},
 		{
 			"name": "Get Comments",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a5960385-7fa0-49b4-9fc8-eb32902c66bd",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"//validate \r",
+							"pm.test(\"Validate attributes are not null\", function () {    \r",
+							"        var jsonDataArray;\r",
+							"        for ( var i=0; i < jsonData.length; i++  ){\r",
+							"                jsonDataArray = jsonData[i];\r",
+							"                for( var j = 0; j<jsonDataArray.length; j++ ) {\r",
+							"                    jsonDataArray[i].id.to.not.be(null);                    \r",
+							"                    jsonDataArray[i].post_id.to.not.be(null);                    \r",
+							"                }\r",
+							"        }  \r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "4865070-443f2533-41de-45d1-ae92-160d056267a3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
