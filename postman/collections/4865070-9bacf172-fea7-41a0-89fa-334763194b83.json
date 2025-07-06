@@ -214,7 +214,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"name\":\"Allasani Peddana\", \"email\":\"allasani.peddana@15ce.com\", \"status\":\"active\"}",
+					"raw": "{\r\n    \"name\": \"Allasani Peddana\",\r\n    \"email\": \"allasani.peddana@15ce.com\",\r\n    \"status\": \"active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -222,7 +222,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://gorest.co.in/public/v2/users/7439935",
+					"raw": "https://gorest.co.in/public/v2/users/7986922",
 					"protocol": "https",
 					"host": [
 						"gorest",
@@ -233,7 +233,7 @@
 						"public",
 						"v2",
 						"users",
-						"7439935"
+						"7986922"
 					]
 				},
 				"description": "Generated from cURL: curl -i -H \"Accept:application/json\" -H \"Content-Type:application/json\" -H \"Authorization: Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40\" -XPATCH \"https://gorest.co.in/public/v2/users/7439935\" -d '{\"name\":\"Allasani Peddana\", \"email\":\"allasani.peddana@15ce.com\", \"status\":\"active\"}'"
