@@ -99,6 +99,30 @@
 		},
 		{
 			"name": "Create user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6bcf327e-ead2-4e97-9cf6-042bd1a46493",
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"//validate \r",
+							"pm.test(\"Validate attributes are not null\", function () {    \r",
+							"        var jsonDataArray;\r",
+							"        for ( var i=0; i < jsonData.length; i++  ){\r",
+							"                jsonDataArray = jsonData[i];\r",
+							"                for( var j = 0; j<jsonDataArray.length; j++ ) {\r",
+							"                    jsonDataArray[i].id.to.not.be(null);                    \r",
+							"                }\r",
+							"        }  \r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "4865070-ae97f1ce-b2cf-4a5a-a748-9c0df2294ba1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -131,7 +155,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Tenali Ramakrishna\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"tenali.ramakrishna@15ce.com\",\r\n    \"status\": \"active\"\r\n}\r\n",
+					"raw": "{\r\n    \"name\": \"Federico Kiko\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"kiko15@yopmail.com\",\r\n    \"status\": \"active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
