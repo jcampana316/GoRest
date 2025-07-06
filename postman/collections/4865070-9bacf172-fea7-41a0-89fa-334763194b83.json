@@ -219,6 +219,18 @@
 				"description": "Generated from cURL: curl -i -H \"Accept:application/json\" -H \"Content-Type:application/json\" -H \"Authorization: Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40\" -XDELETE \"https://gorest.co.in/public/v2/users/7439935\""
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "4865070-78c2edf9-fcd5-48c2-894b-9645723917de",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
