@@ -233,7 +233,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Get Comments",
 			"id": "4865070-443f2533-41de-45d1-ae92-160d056267a3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
