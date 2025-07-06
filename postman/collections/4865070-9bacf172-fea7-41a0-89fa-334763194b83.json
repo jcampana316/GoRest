@@ -258,6 +258,11 @@
 					"script": {
 						"id": "215c58ac-db6d-47a6-9ccc-511e01648cde",
 						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
 							"var schema = {\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"type\":\"array\",\"items\":{\"$ref\":\"#/definitions/Welcome1Element\"},\"definitions\":{\"Welcome1Element\":{\"type\":\"object\",\"additionalProperties\":false,\"properties\":{\"id\":{\"type\":\"integer\"},\"user_id\":{\"type\":\"integer\"},\"title\":{\"type\":\"string\"},\"body\":{\"type\":\"string\"}},\"required\":[\"body\",\"id\",\"title\",\"user_id\"],\"title\":\"Welcome1Element\"}}}\r",
 							"\r",
 							"pm.variables.set(\"schema\", schema);\r",
