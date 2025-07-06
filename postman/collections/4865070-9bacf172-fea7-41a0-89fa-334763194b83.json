@@ -221,7 +221,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Get posts",
 			"id": "4865070-78c2edf9-fcd5-48c2-894b-9645723917de",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
