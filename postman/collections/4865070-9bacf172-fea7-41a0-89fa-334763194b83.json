@@ -131,7 +131,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"name\":\"Tenali Ramakrishna\", \"gender\":\"male\", \"email\":\"tenali.ramakrishna@15ce.com\", \"status\":\"active\"}",
+					"raw": "{\r\n    \"name\": \"Tenali Ramakrishna\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"tenali.ramakrishna@15ce.com\",\r\n    \"status\": \"active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
