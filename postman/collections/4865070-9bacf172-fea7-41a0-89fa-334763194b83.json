@@ -252,6 +252,43 @@
 		},
 		{
 			"name": "Get posts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "215c58ac-db6d-47a6-9ccc-511e01648cde",
+						"exec": [
+							"var = {\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"type\":\"array\",\"items\":{\"$ref\":\"#/definitions/Welcome1Element\"},\"definitions\":{\"Welcome1Element\":{\"type\":\"object\",\"additionalProperties\":false,\"properties\":{\"id\":{\"type\":\"integer\"},\"user_id\":{\"type\":\"integer\"},\"title\":{\"type\":\"string\"},\"body\":{\"type\":\"string\"}},\"required\":[\"body\",\"id\",\"title\",\"user_id\"],\"title\":\"Welcome1Element\"}}}\r",
+							"\r",
+							"pm.variables.set(\"schema\", schema);\r",
+							"try {\r",
+							"    var schema = pm.variables.get(\"schema\");\r",
+							"  \r",
+							"    if(schema) {\r",
+							"        const jsonData = pm.response.json();\r",
+							"        if(jsonData) {\r",
+							"            var Ajv = require('ajv');\r",
+							"            ajv = new Ajv({ logger: console, allErrors: true });\r",
+							"  \r",
+							"            pm.test('Schema is valid', function() {\r",
+							"                var result = tv4.validateMultiple(jsonData, schema);\r",
+							"                console.log(result);\r",
+							"                pm.expect(result.valid).to.be.true;\r",
+							"            });\r",
+							"       }\r",
+							"    }\r",
+							"}\r",
+							"catch(e) {\r",
+							"    console.log(e);\r",
+							"}\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "4865070-78c2edf9-fcd5-48c2-894b-9645723917de",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
