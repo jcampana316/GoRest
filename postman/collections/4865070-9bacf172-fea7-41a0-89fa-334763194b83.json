@@ -241,7 +241,7 @@
 			"response": []
 		},
 		{
-			"name": "Update user Copy",
+			"name": "Update user blank",
 			"id": "4865070-ef15448e-1079-4522-89f8-e5c1b8a38f3e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
