@@ -480,8 +480,6 @@
 							"});\r",
 							"\r",
 							"\r",
-							"\r",
-							"\r",
 							"var jsonData = pm.response.json();\r",
 							"\r",
 							"//validate \r",
