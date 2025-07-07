@@ -242,6 +242,23 @@
 		},
 		{
 			"name": "Update user blank",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4951fd52-c7c8-4e00-bf21-5679014facfe",
+						"exec": [
+							"pm.test(\"Status code is 422\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "4865070-ef15448e-1079-4522-89f8-e5c1b8a38f3e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
