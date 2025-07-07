@@ -440,6 +440,24 @@
 		},
 		{
 			"name": "Get todos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "395a4b33-d590-4450-8aaa-c784e384dc7f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "4865070-16e5e68c-83d0-4c6f-8ac5-847584d55857",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
