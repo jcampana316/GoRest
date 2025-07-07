@@ -254,7 +254,7 @@
 							"\r",
 							"\r",
 							"//validate \r",
-							"pm.test(\"Validate attributes are not null\", function () {    \r",
+							"pm.test(\"Validate message to be specific error\", function () {    \r",
 							"        var jsonDataArray;\r",
 							"        for ( var i=0; i < jsonData.length; i++  ){\r",
 							"                jsonDataArray = jsonData[i];\r",
