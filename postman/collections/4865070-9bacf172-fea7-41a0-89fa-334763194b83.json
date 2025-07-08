@@ -127,7 +127,7 @@
 					"script": {
 						"id": "b18b0667-f43e-406e-b8eb-a61b18f0d647",
 						"exec": [
-							"pm.collectionVariables.set( name  , $randomFirstName + $randomLastName);\r",
+							"pm.collectionVariables.set(\"name\"  , $randomFirstName + $randomLastName);\r",
 							""
 						],
 						"type": "text/javascript",
