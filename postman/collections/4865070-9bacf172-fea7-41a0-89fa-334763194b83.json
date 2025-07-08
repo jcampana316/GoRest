@@ -169,7 +169,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Federico Kiko nueve 9\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"kiko150@yopmail.com\",\r\n    \"status\": \"active\"\r\n}\r\n",
+					"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"kiko150@yopmail.com\",\r\n    \"status\": \"active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
