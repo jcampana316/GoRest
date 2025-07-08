@@ -116,7 +116,19 @@
 							"                    jsonDataArray[i].id.to.not.be(null);                    \r",
 							"                }\r",
 							"        }  \r",
-							"});"
+							"});\r",
+							"\r",
+							"//validate name and email are the same from body\r",
+							"pm.test(\"Validate attributes are not null\", function () {    \r",
+							"        var jsonDataArray;\r",
+							"        for ( var i=0; i < jsonData.length; i++  ){\r",
+							"                jsonDataArray = jsonData[i];\r",
+							"                for( var j = 0; j<jsonDataArray.length; j++ ) {\r",
+							"                    jsonDataArray[i].name.to.be.eql(pm.variables.(name));                    \r",
+							"                }\r",
+							"        }  \r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -169,7 +181,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"kiko150@yopmail.com\",\r\n    \"status\": \"active\"\r\n}\r\n",
+					"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"{{email}}\",\r\n    \"status\": \"active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
