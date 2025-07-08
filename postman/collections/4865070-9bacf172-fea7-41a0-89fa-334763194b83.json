@@ -129,8 +129,8 @@
 						"exec": [
 							"var name = pm.variables.replaceIn('{{$randomFirstName}} {{$randomLastName}}');\r",
 							"var email = name.replace(' ','');\r",
-							"pm.variables.set('name', name);\r",
-							"pm.variables.set('email', name.replace(' ',''));"
+							"pm.variables.set(\"name\", name);\r",
+							"pm.variables.set(\"email\", name.replace(' ',''));"
 						],
 						"type": "text/javascript",
 						"packages": {}
