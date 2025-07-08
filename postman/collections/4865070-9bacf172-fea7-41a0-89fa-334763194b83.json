@@ -125,7 +125,7 @@
 							"                jsonDataArray = jsonData[i];\r",
 							"                for( var j = 0; j<jsonDataArray.length; j++ ) {\r",
 							"                    jsonDataArray[i].name.to.be.eql(pm.collectionVariables.get(name));\r",
-							"                    jsonDataArray[i].name.to.be.eql(pm.collectionVariables.get(email));                    \r",
+							"                    jsonDataArray[i].email.to.be.eql(pm.collectionVariables.get(email));                    \r",
 							"                }\r",
 							"        }  \r",
 							"});\r",
