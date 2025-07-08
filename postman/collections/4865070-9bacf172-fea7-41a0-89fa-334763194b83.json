@@ -127,8 +127,10 @@
 					"script": {
 						"id": "b18b0667-f43e-406e-b8eb-a61b18f0d647",
 						"exec": [
-							"pm.collectionVariables.set(\"name\"  , $randomFirstName + $randomLastName);\r",
-							""
+							"var name = pm.variables.replaceIn('{{$randomFirstName}} {{$randomLastName}}');\r",
+							"var email = name.replace(' ','');\r",
+							"pm.variables.set('name', name);\r",
+							"pm.variables.set('email', name.replace(' ',''));"
 						],
 						"type": "text/javascript",
 						"packages": {}
