@@ -596,5 +596,15 @@
 			},
 			"response": []
 		}
+	],
+	"variable": [
+		{
+			"key": "name",
+			"value": ""
+		},
+		{
+			"key": "email",
+			"value": ""
+		}
 	]
 }
