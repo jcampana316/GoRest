@@ -119,7 +119,7 @@
 							"});\r",
 							"\r",
 							"//validate name and email are the same from body\r",
-							"pm.test(\"Validate attributes are not null\", function () {    \r",
+							"pm.test(\"Validate name and email from response are the same sent in body \", function () {    \r",
 							"        var jsonDataArray;\r",
 							"        for ( var i=0; i < jsonData.length; i++  ){\r",
 							"                jsonDataArray = jsonData[i];\r",
