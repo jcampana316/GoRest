@@ -124,7 +124,7 @@
 							"        for ( var i=0; i < jsonData.length; i++  ){\r",
 							"                jsonDataArray = jsonData[i];\r",
 							"                for( var j = 0; j<jsonDataArray.length; j++ ) {\r",
-							"                    jsonDataArray[i].name.to.be.eql(pm.variables.(name));                    \r",
+							"                    jsonDataArray[i].name.to.be.eql(pm.collectionVariables.get(name));                    \r",
 							"                }\r",
 							"        }  \r",
 							"});\r",
