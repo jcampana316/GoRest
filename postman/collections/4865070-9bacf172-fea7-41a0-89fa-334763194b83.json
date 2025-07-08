@@ -121,6 +121,18 @@
 						"type": "text/javascript",
 						"packages": {}
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b18b0667-f43e-406e-b8eb-a61b18f0d647",
+						"exec": [
+							"pm.collectionVariables.set( name  , $randomFirstName + $randomLastName);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
 				}
 			],
 			"id": "4865070-ae97f1ce-b2cf-4a5a-a748-9c0df2294ba1",
@@ -155,7 +167,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Federico Kiko\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"kiko15@yopmail.com\",\r\n    \"status\": \"active\"\r\n}\r\n",
+					"raw": "{\r\n    \"name\": \"Federico Kiko nueve 9\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"kiko150@yopmail.com\",\r\n    \"status\": \"active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
