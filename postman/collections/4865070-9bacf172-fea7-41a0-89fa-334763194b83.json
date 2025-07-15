@@ -359,60 +359,65 @@
 						"description": "Generated from cURL: curl -i -H \"Accept:application/json\" -H \"Content-Type:application/json\" -H \"Authorization: Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40\" -XPATCH \"https://gorest.co.in/public/v2/users/7439935\" -d '{\"name\":\"Allasani Peddana\", \"email\":\"allasani.peddana@15ce.com\", \"status\":\"active\"}'"
 					},
 					"response": []
+				},
+				{
+					"name": "Delete",
+					"id": "4865070-12319619-a27f-482d-83a0-acb0b60f96ed",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40"
+							}
+						],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/7439935",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"7439935"
+							]
+						},
+						"description": "Generated from cURL: curl -i -H \"Accept:application/json\" -H \"Content-Type:application/json\" -H \"Authorization: Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40\" -XDELETE \"https://gorest.co.in/public/v2/users/7439935\""
+					},
+					"response": []
 				}
 			],
 			"id": "4865070-0e2c8d1f-ef17-408f-a1f2-329e9da4d1df"
 		},
 		{
-			"name": "Delete",
-			"id": "4865070-12319619-a27f-482d-83a0-acb0b60f96ed",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40",
-							"type": "string"
-						}
-					]
-				},
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					},
-					{
-						"key": "Authorization",
-						"value": "Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40"
-					}
-				],
-				"url": {
-					"raw": "https://gorest.co.in/public/v2/users/7439935",
-					"protocol": "https",
-					"host": [
-						"gorest",
-						"co",
-						"in"
-					],
-					"path": [
-						"public",
-						"v2",
-						"users",
-						"7439935"
-					]
-				},
-				"description": "Generated from cURL: curl -i -H \"Accept:application/json\" -H \"Content-Type:application/json\" -H \"Authorization: Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40\" -XDELETE \"https://gorest.co.in/public/v2/users/7439935\""
-			},
-			"response": []
+			"name": "Posts",
+			"item": [],
+			"id": "4865070-db394dd1-9eba-421b-98dd-2cf0212986d0"
 		},
 		{
 			"name": "Get posts",
