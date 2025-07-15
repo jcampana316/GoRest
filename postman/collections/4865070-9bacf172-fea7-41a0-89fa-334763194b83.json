@@ -6,6 +6,11 @@
 	},
 	"item": [
 		{
+			"name": "User",
+			"item": [],
+			"id": "4865070-0e2c8d1f-ef17-408f-a1f2-329e9da4d1df"
+		},
+		{
 			"name": "List users",
 			"event": [
 				{
