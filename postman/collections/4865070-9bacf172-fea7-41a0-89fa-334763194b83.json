@@ -507,6 +507,11 @@
 			"id": "4865070-db394dd1-9eba-421b-98dd-2cf0212986d0"
 		},
 		{
+			"name": "Comments",
+			"item": [],
+			"id": "4865070-ecd1813d-1b34-4306-bd37-5ab4efbfdeb4"
+		},
+		{
 			"name": "Get Comments",
 			"event": [
 				{
