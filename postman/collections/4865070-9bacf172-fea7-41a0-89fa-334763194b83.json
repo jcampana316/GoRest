@@ -271,7 +271,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"{{email}}\",\r\n    \"status\": \"active\"\r\n}\r\n",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"gender\": \"\",\r\n    \"email\": \"\",\r\n    \"status\": \"\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
