@@ -568,16 +568,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://gorest.co.in/public/v2/todos",
-					"protocol": "https",
+					"raw": "{{urlGorest}}/todos",
 					"host": [
-						"gorest",
-						"co",
-						"in"
+						"{{urlGorest}}"
 					],
 					"path": [
-						"public",
-						"v2",
 						"todos"
 					]
 				}
