@@ -108,7 +108,7 @@
 									"\r",
 									"//validate \r",
 									"pm.test(\"Validate attributes are not null\", function () {            \r",
-									"        pm.expect(jsonData.d).to.not.be.null;\r",
+									"        pm.expect(jsonData.id).to.not.be.null;\r",
 									"        pm.expect(jsonData.name).to.not.be.null;\r",
 									"        let id = jsonData.id;\r",
 									"        pm.collectionVariables.set(\"createdUserId\", id);                \r",
@@ -173,7 +173,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"GMAIL_USER_NAME+{{email}}@gmail.com\",\r\n    \"status\": \"active\"\r\n}\r\n",
+							"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"{{email}}@gmail.com\",\r\n    \"status\": \"active\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
