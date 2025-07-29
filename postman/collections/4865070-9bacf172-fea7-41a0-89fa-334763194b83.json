@@ -96,6 +96,168 @@
 					"response": []
 				},
 				{
+					"name": "Create user blank data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6bcf327e-ead2-4e97-9cf6-042bd1a46493",
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b18b0667-f43e-406e-b8eb-a61b18f0d647",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "4865070-4042bc26-0b7a-4e23-aaf9-a4d67a4e925d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"gender\": \"\",\r\n    \"email\": \"\",\r\n    \"status\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlGorest}}/users",
+							"host": [
+								"{{urlGorest}}"
+							],
+							"path": [
+								"users"
+							]
+						},
+						"description": "Generated from cURL: curl -i -H \"Accept:application/json\" -H \"Content-Type:application/json\" -H \"Authorization: Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40\" -XPOST \"https://gorest.co.in/public/v2/users\" -d '{\"name\":\"Tenali Ramakrishna\", \"gender\":\"male\", \"email\":\"tenali.ramakrishna@15ce.com\", \"status\":\"active\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "Create user blank data Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6bcf327e-ead2-4e97-9cf6-042bd1a46493",
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b18b0667-f43e-406e-b8eb-a61b18f0d647",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "4865070-6ce87639-24b0-4625-9954-73dc6af0f21d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"gender\": \"\",\r\n    \"email\": \"\",\r\n    \"status\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlGorest}}/users",
+							"host": [
+								"{{urlGorest}}"
+							],
+							"path": [
+								"users"
+							]
+						},
+						"description": "Generated from cURL: curl -i -H \"Accept:application/json\" -H \"Content-Type:application/json\" -H \"Authorization: Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40\" -XPOST \"https://gorest.co.in/public/v2/users\" -d '{\"name\":\"Tenali Ramakrishna\", \"gender\":\"male\", \"email\":\"tenali.ramakrishna@15ce.com\", \"status\":\"active\"}'"
+					},
+					"response": []
+				},
+				{
 					"name": "Create user",
 					"event": [
 						{
@@ -174,87 +336,6 @@
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"{{email}}\",\r\n    \"status\": \"active\"\r\n}\r\n",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{urlGorest}}/users",
-							"host": [
-								"{{urlGorest}}"
-							],
-							"path": [
-								"users"
-							]
-						},
-						"description": "Generated from cURL: curl -i -H \"Accept:application/json\" -H \"Content-Type:application/json\" -H \"Authorization: Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40\" -XPOST \"https://gorest.co.in/public/v2/users\" -d '{\"name\":\"Tenali Ramakrishna\", \"gender\":\"male\", \"email\":\"tenali.ramakrishna@15ce.com\", \"status\":\"active\"}'"
-					},
-					"response": []
-				},
-				{
-					"name": "Create user blank data",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "6bcf327e-ead2-4e97-9cf6-042bd1a46493",
-								"exec": [
-									"var jsonData = pm.response.json();\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "b18b0667-f43e-406e-b8eb-a61b18f0d647",
-								"exec": [
-									""
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "4865070-4042bc26-0b7a-4e23-aaf9-a4d67a4e925d",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"gender\": \"\",\r\n    \"email\": \"\",\r\n    \"status\": \"\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
