@@ -75,16 +75,11 @@
 							}
 						],
 						"url": {
-							"raw": "https://gorest.co.in/public/v2/users",
-							"protocol": "https",
+							"raw": "{{urlGorest}}/users",
 							"host": [
-								"gorest",
-								"co",
-								"in"
+								"{{urlGorest}}"
 							],
 							"path": [
-								"public",
-								"v2",
 								"users"
 							],
 							"query": [
