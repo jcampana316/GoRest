@@ -602,7 +602,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "7d156142-44ea-462c-873b-c34c78c25cf9",
+				"id": "f730b512-7025-4bbb-9211-019ec4434f43",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -613,7 +613,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "3fd055f8-dd99-43e1-92e9-c0a768f49fde",
+				"id": "31d6bc4b-165b-4619-b651-161d18012b35",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -634,7 +634,8 @@
 		{
 			"key": "createdUserId",
 			"value": "",
-			"type": "string"
+			"type": "string",
+			"disabled": true
 		}
 	]
 }
