@@ -194,6 +194,104 @@
 					"response": []
 				},
 				{
+					"name": "Create user Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6bcf327e-ead2-4e97-9cf6-042bd1a46493",
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									"\r",
+									"//validate \r",
+									"pm.test(\"Validate attributes are not null\", function () {            \r",
+									"        pm.expect(jsonData.id).to.not.be.null;\r",
+									"        pm.expect(jsonData.name).to.not.be.null;\r",
+									"        let id = jsonData.id;\r",
+									"        pm.collectionVariables.set(\"createdUserId\", id);                \r",
+									"});\r",
+									"\r",
+									"//validate name and email are the same from body\r",
+									"pm.test(\"Validate name and email from response are the same sent in body \", function () {    \r",
+									"        pm.expect(jsonData.name).to.eql(pm.collectionVariables.get(\"name\"));\r",
+									"        pm.expect(jsonData.email).to.eql(pm.collectionVariables.get(\"email\"));                    \r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b18b0667-f43e-406e-b8eb-a61b18f0d647",
+								"exec": [
+									"var name = pm.variables.replaceIn('{{$randomFirstName}} {{$randomLastName}}');\r",
+									"var email = name.replace(' ','');\r",
+									"pm.collectionVariables.set(\"name\", name);\r",
+									"pm.collectionVariables.set(\"email\", name.replace(' ','')+\"@gmail.com\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "4865070-4042bc26-0b7a-4e23-aaf9-a4d67a4e925d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"{{email}}\",\r\n    \"status\": \"active\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlGorest}}/users",
+							"host": [
+								"{{urlGorest}}"
+							],
+							"path": [
+								"users"
+							]
+						},
+						"description": "Generated from cURL: curl -i -H \"Accept:application/json\" -H \"Content-Type:application/json\" -H \"Authorization: Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40\" -XPOST \"https://gorest.co.in/public/v2/users\" -d '{\"name\":\"Tenali Ramakrishna\", \"gender\":\"male\", \"email\":\"tenali.ramakrishna@15ce.com\", \"status\":\"active\"}'"
+					},
+					"response": []
+				},
+				{
 					"name": "Update user",
 					"id": "4865070-e02ddc53-1800-4be2-ae51-a7becc04fba3",
 					"protocolProfileBehavior": {
