@@ -327,16 +327,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://gorest.co.in/public/v2/users/7986922",
-							"protocol": "https",
+							"raw": "{{urlGorest}}/users/7986922",
 							"host": [
-								"gorest",
-								"co",
-								"in"
+								"{{urlGorest}}"
 							],
 							"path": [
-								"public",
-								"v2",
 								"users",
 								"7986922"
 							]
@@ -378,17 +373,11 @@
 							}
 						],
 						"url": {
-							"raw": "https://gorest.co.in/public/v2/users/7439935",
-							"protocol": "https",
+							"raw": "{{urlGorest}}/7439935",
 							"host": [
-								"gorest",
-								"co",
-								"in"
+								"{{urlGorest}}"
 							],
 							"path": [
-								"public",
-								"v2",
-								"users",
 								"7439935"
 							]
 						},
@@ -472,16 +461,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://gorest.co.in/public/v2/posts",
-							"protocol": "https",
+							"raw": "{{urlGorest}}/posts",
 							"host": [
-								"gorest",
-								"co",
-								"in"
+								"{{urlGorest}}"
 							],
 							"path": [
-								"public",
-								"v2",
 								"posts"
 							]
 						}
