@@ -105,11 +105,12 @@
 								"exec": [
 									"var jsonData = pm.response.json();\r",
 									"\r",
+									"\r",
 									"//validate \r",
 									"pm.test(\"Validate attributes are not null\", function () {    \r",
 									"        let id = jsonData.id;\r",
-									"        pm.expect(id).to.not.be(null);\r",
-									"        pm.expect(jsonData.name).to.not.be(null);\r",
+									"        pm.expect(id).to.not.be.null;\r",
+									"        pm.expect(jsonData.name).to.not.be.null;\r",
 									"        pm.collectionVariables.set(\"createdUserId\", id);                \r",
 									"});\r",
 									"\r",
@@ -119,7 +120,6 @@
 									"        pm.expect(jsonData.email).to.eql(pm.collectionVariables.get(\"email\"));                    \r",
 									"});\r",
 									"\r",
-									"console.log(\"stored in collection variable createdUserId :\", pm.collectionVariables.get(\"createdUserId\"));\r",
 									""
 								],
 								"type": "text/javascript",
