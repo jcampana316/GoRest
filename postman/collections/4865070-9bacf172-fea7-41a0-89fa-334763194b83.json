@@ -177,7 +177,7 @@
 					"response": []
 				},
 				{
-					"name": "Create user blank data Copy",
+					"name": "Create user null",
 					"event": [
 						{
 							"listen": "test",
