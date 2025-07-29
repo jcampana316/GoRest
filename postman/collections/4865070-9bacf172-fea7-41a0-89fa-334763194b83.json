@@ -134,7 +134,7 @@
 									"var name = pm.variables.replaceIn('{{$randomFirstName}} {{$randomLastName}}');\r",
 									"var email = name.replace(' ','');\r",
 									"pm.collectionVariables.set(\"name\", name);\r",
-									"pm.collectionVariables.set(\"email\", name.replace(' ',''));"
+									"pm.collectionVariables.set(\"email\", name.replace(' ','')+\"gmail.com\");"
 								],
 								"type": "text/javascript",
 								"packages": {}
