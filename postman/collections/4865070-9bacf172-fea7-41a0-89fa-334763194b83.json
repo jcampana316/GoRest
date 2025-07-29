@@ -320,13 +320,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{urlGorest}}/users/8037330",
+							"raw": "{{urlGorest}}/users//{{createdUserId}}",
 							"host": [
 								"{{urlGorest}}"
 							],
 							"path": [
 								"users",
-								"8037330"
+								"",
+								"{{createdUserId}}"
 							]
 						},
 						"description": "Generated from cURL: curl -i -H \"Accept:application/json\" -H \"Content-Type:application/json\" -H \"Authorization: Bearer bc867755c2e9b01710104d6d60131b249f12ee2b5b847e1673a43d74a521fa40\" -XPATCH \"https://gorest.co.in/public/v2/users/7439935\" -d '{\"name\":\"Allasani Peddana\", \"email\":\"allasani.peddana@15ce.com\", \"status\":\"active\"}'"
