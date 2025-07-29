@@ -237,7 +237,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"\",\r\n    \"gender\": \"\",\r\n    \"email\": \"\",\r\n    \"status\": \"\"\r\n}\r\n",
+							"raw": "{\r\n    \"name\": null,\r\n    \"gender\": null,\r\n    \"email\": null,\r\n    \"status\": null\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
