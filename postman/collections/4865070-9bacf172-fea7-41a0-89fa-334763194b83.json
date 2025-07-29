@@ -581,6 +581,30 @@
 			"response": []
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7d156142-44ea-462c-873b-c34c78c25cf9",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3fd055f8-dd99-43e1-92e9-c0a768f49fde",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
 			"key": "name",
@@ -589,6 +613,11 @@
 		{
 			"key": "email",
 			"value": ""
+		},
+		{
+			"key": "createdUserId",
+			"value": "",
+			"type": "string"
 		}
 	]
 }
