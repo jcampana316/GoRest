@@ -117,7 +117,7 @@
 									"//validate name and email are the same from body\r",
 									"pm.test(\"Validate name and email from response are the same sent in body \", function () {    \r",
 									"        pm.expect(jsonData.name).to.eql(pm.collectionVariables.get(\"name\"));\r",
-									"        pm.expect(jsonData.email).to.eql(pm.collectionVariables.get(\"email\").replace(' ',''));                    \r",
+									"        pm.expect(jsonData.email).to.eql(pm.collectionVariables.get(\"email\"));                    \r",
 									"});\r",
 									"\r",
 									""
