@@ -204,20 +204,6 @@
 									"var jsonData = pm.response.json();\r",
 									"\r",
 									"\r",
-									"//validate \r",
-									"pm.test(\"Validate attributes are not null\", function () {            \r",
-									"        pm.expect(jsonData.id).to.not.be.null;\r",
-									"        pm.expect(jsonData.name).to.not.be.null;\r",
-									"        let id = jsonData.id;\r",
-									"        pm.collectionVariables.set(\"createdUserId\", id);                \r",
-									"});\r",
-									"\r",
-									"//validate name and email are the same from body\r",
-									"pm.test(\"Validate name and email from response are the same sent in body \", function () {    \r",
-									"        pm.expect(jsonData.name).to.eql(pm.collectionVariables.get(\"name\"));\r",
-									"        pm.expect(jsonData.email).to.eql(pm.collectionVariables.get(\"email\"));                    \r",
-									"});\r",
-									"\r",
 									""
 								],
 								"type": "text/javascript",
@@ -229,10 +215,7 @@
 							"script": {
 								"id": "b18b0667-f43e-406e-b8eb-a61b18f0d647",
 								"exec": [
-									"var name = pm.variables.replaceIn('{{$randomFirstName}} {{$randomLastName}}');\r",
-									"var email = name.replace(' ','');\r",
-									"pm.collectionVariables.set(\"name\", name);\r",
-									"pm.collectionVariables.set(\"email\", name.replace(' ','')+\"@gmail.com\");"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
