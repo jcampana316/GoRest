@@ -188,16 +188,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://gorest.co.in/public/v2/users",
-							"protocol": "https",
+							"raw": "{{urlGorest}}/users",
 							"host": [
-								"gorest",
-								"co",
-								"in"
+								"{{urlGorest}}"
 							],
 							"path": [
-								"public",
-								"v2",
 								"users"
 							]
 						},
@@ -247,16 +242,11 @@
 							}
 						},
 						"url": {
-							"raw": "https://gorest.co.in/public/v2/users/7986922",
-							"protocol": "https",
+							"raw": "{{urlGorest}}/users/7986922",
 							"host": [
-								"gorest",
-								"co",
-								"in"
+								"{{urlGorest}}"
 							],
 							"path": [
-								"public",
-								"v2",
 								"users",
 								"7986922"
 							]
