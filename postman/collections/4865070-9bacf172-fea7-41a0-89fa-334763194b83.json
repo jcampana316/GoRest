@@ -335,7 +335,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"gender\": \"{{gender}}\", // male, female\r\n    \"email\": \"{{email}}\",\r\n    \"status\": \"{{status}}\" // active, inactive\r\n}\r\n",
+							"raw": "{\r\n    \"name\": \"{{name}}\", // set on pre-request script\r\n    \"gender\": \"{{gender}}\", // male, female\r\n    \"email\": \"{{email}}\", // set on pre-request script\r\n    \"status\": \"{{status}}\" // active, inactive\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
