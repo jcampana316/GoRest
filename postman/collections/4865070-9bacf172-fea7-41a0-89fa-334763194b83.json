@@ -741,10 +741,13 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c1b1dc06-1204-4fe8-a3b3-3600b85d7308",
+				"id": "56acbc79-948c-4042-9b1d-19572c26f1b3",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
+					"var arrayGender = [\"male\"; \"female\"];\r",
+					"pm.globals.set(\"certVal\",  arrayCert[Math.floor(Math.random()*arrayCert.length)]);\r",
+					"\r",
 					""
 				]
 			}
@@ -752,7 +755,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e0c779fd-1cba-4d5c-8c60-242c07f3482c",
+				"id": "8f0a9bab-f7e8-4cc3-8ed3-6037461d85ca",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
