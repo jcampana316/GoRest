@@ -395,6 +395,24 @@
 				},
 				{
 					"name": "Update user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "32840691-3970-4ba8-94fa-ddefc1fa822a",
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "4865070-e02ddc53-1800-4be2-ae51-a7becc04fba3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
