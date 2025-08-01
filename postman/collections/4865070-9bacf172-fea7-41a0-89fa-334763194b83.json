@@ -741,7 +741,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "d0171eb5-5932-4682-b7d1-78f8a06f5782",
+				"id": "45be14e3-be43-40d1-bcae-7c5b9dde2a86",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -750,7 +750,7 @@
 					"\r",
 					"\r",
 					"var arrayStatus = [\"active\" , \"inactive\"];\r",
-					"pm.globals.set(\"certVal\",  arrayGender[Math.floor(Math.random()*arrayGender.length)]);\r",
+					"pm.globals.set(\"status\",  arrayGender[Math.floor(Math.random()*arrayStatus.length)]);\r",
 					""
 				]
 			}
@@ -758,7 +758,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "fb54261b-8007-4458-b79d-44d35ae5aaac",
+				"id": "a8c915ad-a6f1-4973-9dff-6e92ee799b2c",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
