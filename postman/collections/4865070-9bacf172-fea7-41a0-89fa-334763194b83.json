@@ -116,12 +116,16 @@
 									"});\r",
 									"\r",
 									"\r",
-									"//validate name and email are the same from body\r",
-									"pm.test(\"Validate name and email from response are the same sent in body \", function () {    \r",
-									"        pm.expect(jsonData.name).to.eql(pm.collectionVariables.get(\"name\"));\r",
-									"        pm.expect(jsonData.email).to.eql(pm.collectionVariables.get(\"email\"));                    \r",
-									"});\r",
-									""
+									"//validate \r",
+									"pm.test(\"Validate error message \", function () {    \r",
+									"        var jsonDataArray;\r",
+									"        for ( var i=0; i < jsonData.length; i++  ){\r",
+									"                jsonDataArray = jsonData[i];\r",
+									"                for( var j = 0; j<jsonDataArray.length; j++ ) {\r",
+									"                    jsonDataArray[i].message.to.include(\"can´t be blank\");\r",
+									"                }\r",
+									"        }  \r",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {}
