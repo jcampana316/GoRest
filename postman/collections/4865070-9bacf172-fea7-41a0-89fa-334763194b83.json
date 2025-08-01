@@ -741,12 +741,12 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "56acbc79-948c-4042-9b1d-19572c26f1b3",
+				"id": "23406c4f-ac3f-4cd1-9892-a4bac2875353",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
-					"var arrayGender = [\"male\"; \"female\"];\r",
-					"pm.globals.set(\"certVal\",  arrayCert[Math.floor(Math.random()*arrayCert.length)]);\r",
+					"var arrayGender = [\"male\" , \"female\"];\r",
+					"pm.globals.set(\"certVal\",  arrayGender[Math.floor(Math.random()*arrayGender.length)]);\r",
 					"\r",
 					""
 				]
@@ -755,7 +755,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8f0a9bab-f7e8-4cc3-8ed3-6037461d85ca",
+				"id": "ddd197e7-311e-419e-a7e6-c3e3207079a6",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
