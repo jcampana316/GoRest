@@ -788,6 +788,8 @@
 					"script": {
 						"id": "395a4b33-d590-4450-8aaa-c784e384dc7f",
 						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"\r",
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
