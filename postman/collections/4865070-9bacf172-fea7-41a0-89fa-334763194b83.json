@@ -460,7 +460,7 @@
 									"\r",
 									"\r",
 									"//validate \r",
-									"pm.test(\"Validate message to be specific error\", function () {    \r",
+									"pm.test(\"Validate error message \", function () {    \r",
 									"        var jsonDataArray;\r",
 									"        for ( var i=0; i < jsonData.length; i++  ){\r",
 									"                jsonDataArray = jsonData[i];\r",
