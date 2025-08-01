@@ -452,9 +452,11 @@
 								"exec": [
 									"var jsonData = pm.response.json();\r",
 									"\r",
+									"\r",
 									"pm.test(\"Status code is 422\", function () {\r",
 									"    pm.response.to.have.status(422);\r",
 									"});\r",
+									"\r",
 									"\r",
 									"\r",
 									"//validate \r",
@@ -463,11 +465,15 @@
 									"        for ( var i=0; i < jsonData.length; i++  ){\r",
 									"                jsonDataArray = jsonData[i];\r",
 									"                for( var j = 0; j<jsonDataArray.length; j++ ) {\r",
-									"                    jsonDataArray[i].message.to.eql(\"can´t be blank\");\r",
+									"                    jsonDataArray[i].message.to.include(\"can´t be blank\");\r",
 									"                }\r",
 									"        }  \r",
 									"});\r",
-									""
+									"\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"string_you_want_to_search\");\r",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {}
