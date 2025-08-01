@@ -110,7 +110,7 @@
 									"    pm.response.to.have.status(422);\r",
 									"});\r",
 									"\r",
-									"//find  message \r",
+									"//find message \r",
 									"pm.test(\"Error blank message\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"can't be blank\");\r",
 									"});\r",
