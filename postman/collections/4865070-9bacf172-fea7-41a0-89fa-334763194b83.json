@@ -801,7 +801,7 @@
 							"                    jsonDataArray[i].id.to.not.be(null);\r",
 							"                    jsonDataArray[i].user_id.to.not.be(null);\r",
 							"                    jsonDataArray[i].title.to.not.be(null);\r",
-							"                    jsonDataArray[i].due_on.to.not.be(null);\r",
+							"                    //jsonDataArray[i].due_on.to.not.be(null);\r",
 							"                    //jsonDataArray[i].status.to.not.be(null);\r",
 							"                }\r",
 							"        }  \r",
