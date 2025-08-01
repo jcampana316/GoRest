@@ -116,8 +116,6 @@
 									"});\r",
 									"\r",
 									"\r",
-									"\r",
-									"\r",
 									"//validate \r",
 									"pm.test(\"Validate attributes are not null\", function () {            \r",
 									"        pm.expect(jsonData.id).to.not.be.null;\r",
