@@ -741,7 +741,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "45be14e3-be43-40d1-bcae-7c5b9dde2a86",
+				"id": "194cfcda-60f4-4bd5-8011-cea4cfe3a057",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -750,7 +750,7 @@
 					"\r",
 					"\r",
 					"var arrayStatus = [\"active\" , \"inactive\"];\r",
-					"pm.globals.set(\"status\",  arrayGender[Math.floor(Math.random()*arrayStatus.length)]);\r",
+					"pm.globals.set(\"status\",  arrayStatus[Math.floor(Math.random()*arrayStatus.length)]);\r",
 					""
 				]
 			}
@@ -758,7 +758,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a8c915ad-a6f1-4973-9dff-6e92ee799b2c",
+				"id": "67abf508-3fb2-4f05-8710-fcd954c65892",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
