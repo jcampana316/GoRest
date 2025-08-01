@@ -335,7 +335,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"gender\": \"{{gender}}\", // male, female\r\n    \"email\": \"{{email}}\",\r\n    \"status\": \"{{status}}\" // active\r\n}\r\n",
+							"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"gender\": \"{{gender}}\", // male, female\r\n    \"email\": \"{{email}}\",\r\n    \"status\": \"{{status}}\" // active, inactive\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -741,13 +741,16 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "23406c4f-ac3f-4cd1-9892-a4bac2875353",
+				"id": "d0171eb5-5932-4682-b7d1-78f8a06f5782",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
 					"var arrayGender = [\"male\" , \"female\"];\r",
-					"pm.globals.set(\"certVal\",  arrayGender[Math.floor(Math.random()*arrayGender.length)]);\r",
+					"pm.globals.set(\"gender\",  arrayGender[Math.floor(Math.random()*arrayGender.length)]);\r",
 					"\r",
+					"\r",
+					"var arrayStatus = [\"active\" , \"inactive\"];\r",
+					"pm.globals.set(\"certVal\",  arrayGender[Math.floor(Math.random()*arrayGender.length)]);\r",
 					""
 				]
 			}
@@ -755,7 +758,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ddd197e7-311e-419e-a7e6-c3e3207079a6",
+				"id": "fb54261b-8007-4458-b79d-44d35ae5aaac",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
