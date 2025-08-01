@@ -106,7 +106,9 @@
 									"var jsonData = pm.response.json();\r",
 									"\r",
 									"\r",
-									""
+									"pm.test(\"Status code is 422\", function () {\r",
+									"    pm.response.to.have.status(422);\r",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {}
